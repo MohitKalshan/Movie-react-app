@@ -1,4 +1,5 @@
- //actions are JSON objects
- {
-    type: 'ADD_MOVIEs'
- }
+//actions are JSON objects
+//  {
+//     type: 'ADD_MOVIES'
+//     movie:[],
+//  }
