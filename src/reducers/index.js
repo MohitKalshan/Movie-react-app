@@ -1,3 +1,4 @@
+import { ADD_MOVIES } from "../action";
 // Reducer as pure function
 export default function movies(state = [], action) {
   // initial state of movies is empty array

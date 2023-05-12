@@ -2,6 +2,7 @@ import { Component } from "react";
 import Navbar from "./Navbar";
 import MovieCart from "./MovieCart";
 import { data } from "../data";
+import { addMovies } from "../action";
 
 class App extends Component {
   componentDidMount() {
@@ -10,10 +11,7 @@ class App extends Component {
       console.log("Updated");
       this.forceUpdate();
     })
-    store.dispatch({
-      type: "ADD_MOVIES",
-      movies: data,
-    });
+    store.dispatch(addMovies(data));
     console.log('State: ',store.getState());
   }
   render() {
