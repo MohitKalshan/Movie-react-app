@@ -12,8 +12,8 @@ function App() {
           <div className="tab">Favourites</div>
         </div>
         <div className="list">
-      {data.map(movie=>(
-        <MovieCart movie={movie}/>
+      {data.map((movie,index)=>(
+        <MovieCart movie={movie} key={`movie${index}`}/>
       ))}
         </div>
       </div>

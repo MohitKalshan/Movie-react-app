@@ -6,7 +6,7 @@ export default class MovieCart extends Component {
     return (
       <div className="movie-card">
         <div className="left">
-          <img src={movie.Poster} alt="Movie-Poster" srcset="" />
+          <img src={movie.Poster} alt="Movie-Poster" />
         </div>
         <div className="right">
           <div className="title">{movie.Title}</div>
